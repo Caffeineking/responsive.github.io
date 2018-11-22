@@ -34,7 +34,7 @@
 						<header class="major">
 							<h1>Who's this guy?</h1>
 						</header>
-						<h3> I live in Los Angeles but I call many places home. I'm a husband and a father of two boys. If I'm not building front-end applications, I'm sharpening my skills on Node.JS to use MySQL/NoSQL. I'm a foodie, love outdoors and....coffee.
+						<h3> I live in Los Angeles but I call many places home. I'm a husband to my beautiful wife and a father of two boys. If I'm not working on my projects, I'm sharpening my skills on React and Node to use MySQL/NoSQL. I'm a foodie, love outdoors and....coffee.
 						</h3>
 						<h3> 
 						</h3>
@@ -94,21 +94,40 @@
 				<!-- Three -->
 					<section id="three">
 						<h2>Get In Touch</h2>
-						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+						<p>I want to hear about you!</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
-							<div class="col-4 col-12-small">
+									<form action="https://postmail.invotes.com/send"
+									method="post" id="email_form">
+								
+									<input type="text" name="subject" placeholder="Subject" />
+									<textarea name="text" placeholder="Message"></textarea>
+									<input type="hidden" name="access_token" value="dhlyl53uz1o8jcw1udmti4g3" />
+									  <!-- return urls can be fully qualified -OR-
+										 start with / for root relative -OR-
+										 start with . for url relative --> 
+									<input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+									<input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+								
+									<!-- set the reply-to address -->
+									<!-- <input type="text" name="reply_to"
+												placeholder="Your Email" /> -->
+								
+									<!-- to append extra fields, use the extra_ prefix.
+										Entries will be appended to your message body. -->
+									<!-- <input type="text" name="extra_phone_number"
+												placeholder="Phone Number" /> -->
+								
+									<!-- to split your message into 160 chars
+										 for an sms gateway -->
+									<!-- <input type="hidden"
+												name="sms_format" value="true" /> -->
+								   
+									<input id="submit_form" type="submit" value="Send" />
+			<ul class="actions">
+			</ul>
+		</div>
+		<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
 									<li>
 										<h3 class="icon fa-home"><span class="label">Address</span></h3>
@@ -117,11 +136,11 @@
 									</li>
 									<li>
 										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
-										000-000-0000
+										661-376-0439
 									</li>
 									<li>
 										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-										<a href="mailto:JohnnSantos2018@gmailcom">JohnnSantos2018@gmail.com</a>
+										<a href="mailto:JohnnSantos18@gmailcom">JohnnSantos18@gmail.com</a>
 									</li>
 								</ul>
 							</div>
@@ -452,10 +471,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						<li><a href="https://www.linkedin.com/in/kuyajohnn" target="_blank"class="icon fa-linkedin"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/Caffeineking" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:JohnnSantos18@gmailcom" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; Santos Inc</li>
